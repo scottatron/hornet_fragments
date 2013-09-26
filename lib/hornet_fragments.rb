@@ -1,4 +1,1 @@
-require "hornet_fragments/engine"
-
-module HornetFragments
-end
+require "hornet/fragments/engine"

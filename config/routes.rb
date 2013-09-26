@@ -1,2 +1,2 @@
-HornetFragments::Engine.routes.draw do
+Hornet::Fragments::Engine.routes.draw do
 end

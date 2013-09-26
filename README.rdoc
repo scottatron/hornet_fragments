@@ -1,3 +1,3 @@
-= HornetFragments
+= Hornet::Fragments
 
 This project rocks and uses MIT-LICENSE.
