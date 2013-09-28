@@ -1,0 +1,14 @@
+= form_for @page, url: page_path, as: 'page', html: { multipart: true } do |f|
+
+  = f.fields_for :fragments do |b|
+    = b.fields_for :mnode do |m|
+      = m.file_field :file
+      
+    - if b.object.mnode.present?
+      - if b.object.mnode.file.present?
+        = image_tag b.object.mnode.file.thumb('100x100#').url
+      
+  
+  = f.submit 'Save page'
+
+  = flash[:notice]

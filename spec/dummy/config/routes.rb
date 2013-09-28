@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-
-  mount HornetFragments::Engine => "/hornet_fragments"
+  mount Hornet::Fragments::Engine => "/hornet/f"
 end
