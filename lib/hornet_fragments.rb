@@ -1,1 +1,1 @@
-require "hornet/fragments/engine"
+require 'hornet/fragments'
