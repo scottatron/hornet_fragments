@@ -9,7 +9,7 @@ module Hornet
 
         def fragment_accessor(attribute, type = :string)
 
-          has_one "#{attribute}_fragment".to_sym, as: :fragmentable, class_name: 'Fragment'
+          has_one "#{attribute}_fragment".to_sym, as: :fragmentable, class_name: 'Fragment', autosave: true
 
           instance_methods = Module.new do
 
